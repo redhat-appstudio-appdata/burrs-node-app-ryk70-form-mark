@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: node-express-hello-fsii
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:bgriggs-tenant-node-express-hello-fsii
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1ca73018135f06e0a09bbdf440806c6de50c04b84049c44753df46ddbeb54312
         name: my-nodejs
         ports:
         - containerPort: 3001
