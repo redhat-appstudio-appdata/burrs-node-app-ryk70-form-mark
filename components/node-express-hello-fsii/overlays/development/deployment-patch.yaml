@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: node-express-hello-fsii
+  namespace: bgriggs-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1ca73018135f06e0a09bbdf440806c6de50c04b84049c44753df46ddbeb54312
+        name: my-nodejs
+        resources: {}
+status: {}
